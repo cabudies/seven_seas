@@ -1,0 +1,140 @@
+main.international-apirants {
+    .online-booking.online-booking-int-asp {
+        background: url("../images/study-bg.png");
+        h2 {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 36px;
+        }
+        .teacher {
+            width: 13%;
+        }
+        .last-para > div {
+            padding-left: 0;
+        }
+        .tructed-text {
+            max-width: 35%;
+        }
+    }
+    .home-hero{
+        &%background-props {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+    }    
+    @function wordSpacing($spacing){
+        @return $spacing;
+    } 
+    .int-service-bg {
+        background: url(../images/page-2-bg.svg); 
+        @extend %background-props;       
+    }
+    .int-recruiting-agent {
+        background: url(../images/page-3-hero.svg); 
+        @extend %background-props; 
+        h2+p{
+            word-spacing: wordSpacing(2px);
+        }
+    }
+    .fs-36 {
+        font-size: 36px;
+    }
+    .fs-48 {
+        font-size: 48px;
+    }
+    .fw-500 {
+        font-weight: 500;
+    }
+    .width-50 {
+        width: 50px;
+    }
+    .height-12 {
+        height: 12px;
+    }
+    .width-150 {
+        width: 150px;
+    }
+    .br-20 {
+        border-radius: 20px;
+    }
+    .btn-warning {
+        background: #e3a311;
+    }
+    .width-92 {
+        width: 92%;
+    }
+    .career-programs {
+        background: #adceff;
+        .red-text {
+            color: #e31e24;
+            word-spacing: 3px;
+        }
+        .right-section {
+            border-radius: 20px;
+            + p {
+                color: #001343;
+                font-size: 24px;
+                padding-left: 40px;
+                padding-right: 40px;
+                word-spacing: 4px;
+            }
+        }
+    }
+    .study-section {
+        background: #feffc5;
+        .btn-style {
+            background: #755912;
+            font-size: 48px;
+            border-radius: 20px;
+        }
+        .text-study {
+            color: #434400;
+            width: 64.5%;
+            margin: auto;
+            span {
+                padding-right: 14.1px;
+            }
+        }
+        &.extended{
+            background: #E9D7C3;
+            .btn-style{
+                background: #4B0303;
+            }
+            .text-study{
+                color:#A05400;
+            }
+            .btn-warning {
+                background: #9B691F;
+                &+p{
+                    color: #9B691F;
+                }
+            }
+        }
+    }
+    .primary-btn {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .student-facilities {
+        background: #cfffd0;
+        &.exteded{
+            background: #730000;
+            .btn {
+                color: #730000;
+            }
+            .fw-bolder {
+                font-weight: 900 !important;
+            }
+        }
+        .text-grey {
+            color: #BEBEBE;
+        }
+    }
+    #staticBackdrop {
+        .modal-dialog {
+            max-width: initial;
+            height: 100%;
+            min-height: initial;
+        }
+    }
+}

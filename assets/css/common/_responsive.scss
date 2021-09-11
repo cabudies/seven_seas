@@ -1,0 +1,84 @@
+@media screen and (max-width:1399px) {
+  main .online-booking .booking-bg {
+    background-size: 40%;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  main .online-booking .booking-bg ul li>span .text {
+    font-size: 22px;
+  }
+
+  main .home-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  main .home-hero p {
+    font-size: 22px;
+  }
+
+  .common-btn,
+  main .career-choice .common-btn {
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 8px 28px;
+  }
+
+  main .online-booking .booking-bg {
+    height: 380px;
+  }
+
+  main .online-booking {
+    padding: 50px 0;
+  }
+
+  main .services .title h2,
+  main .career-choice p,
+  main .international-exp p,
+  main .international-exp ul li {
+    font-size: 22px;
+  }
+
+  main .services .title {
+    width: 315px;
+  }
+
+  main .services,
+  main .consult-us,
+  main .connect-us,
+  main .student-assist,
+  main .career-choice,
+  main .international-exp,
+  main .recruitment-agent,
+  main .partner {
+    padding: 36px 0 55px;
+  }
+
+  main .connect-us h1,
+  main .connect-us ul li,
+  main .career-choice h4,
+  main .consult-us h4,
+  main .recruitment-agent p,
+  main .partner p {
+    font-size: 24px;
+  }
+
+  main .consult-us .common-btn {
+    background-color: #58019C;
+    color: #fff;
+    margin: 70px 0 0;
+  }
+
+  main .student-assist p,
+  main .recruitment-agent h3,
+  main .partner h2 {
+    font-size: 32px;
+  }
+
+  .label-ribben {
+    border-radius: 14px 0;
+    font-size: 26px;
+    padding: 8px 20px;
+  }
+}
