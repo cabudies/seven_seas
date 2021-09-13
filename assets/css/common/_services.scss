@@ -1,6 +1,6 @@
 main.international-apirants {
     .online-booking.online-booking-int-asp {
-        background: url("../images/study-bg.png");
+        background-image: url("../images/study-bg.png");
         h2 {
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             font-size: 36px;
@@ -12,27 +12,27 @@ main.international-apirants {
             padding-left: 0;
         }
         .tructed-text {
-            max-width: 35%;
+            max-width: 45%;
         }
     }
-    .home-hero{
+    .home-hero {
         &%background-props {
             background-size: contain;
             background-repeat: no-repeat;
             background-position: right center;
         }
-    }    
-    @function wordSpacing($spacing){
+    }
+    @function wordSpacing($spacing) {
         @return $spacing;
-    } 
+    }
     .int-service-bg {
-        background: url(../images/page-2-bg.svg); 
-        @extend %background-props;       
+        background-image: url(../images/page-2-bg.svg);
+        @extend %background-props;
     }
     .int-recruiting-agent {
-        background: url(../images/page-3-hero.svg); 
-        @extend %background-props; 
-        h2+p{
+        background-image: url(../images/page-3-hero.svg);
+        @extend %background-props;
+        h2 + p {
             word-spacing: wordSpacing(2px);
         }
     }
@@ -95,18 +95,18 @@ main.international-apirants {
                 padding-right: 14.1px;
             }
         }
-        &.extended{
-            background: #E9D7C3;
-            .btn-style{
-                background: #4B0303;
+        &.extended {
+            background: #e9d7c3;
+            .btn-style {
+                background: #4b0303;
             }
-            .text-study{
-                color:#A05400;
+            .text-study {
+                color: #a05400;
             }
             .btn-warning {
-                background: #9B691F;
-                &+p{
-                    color: #9B691F;
+                background: #9b691f;
+                & + p {
+                    color: #9b691f;
                 }
             }
         }
@@ -117,7 +117,7 @@ main.international-apirants {
     }
     .student-facilities {
         background: #cfffd0;
-        &.exteded{
+        &.exteded {
             background: #730000;
             .btn {
                 color: #730000;
@@ -127,7 +127,7 @@ main.international-apirants {
             }
         }
         .text-grey {
-            color: #BEBEBE;
+            color: #bebebe;
         }
     }
     #staticBackdrop {
@@ -137,4 +137,47 @@ main.international-apirants {
             min-height: initial;
         }
     }
+    /* carousel started  */
+    .carousel-dark .carousel-indicators {
+        margin-right: 0;
+        margin-left: 0;
+        height: 110px;
+        bottom: -32px;
+        align-items: center;
+        [data-bs-target] {
+            background-color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            position: relative;
+            margin-right: 140px;
+            margin-left: 140px;
+            opacity: 1;
+            &.active::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                height: 100px;
+                width: 100px;
+                background: url(./../../assets/images/page-2-sec1-b.png);
+                left: -30px;
+                top: -30px;
+            }
+            &:not(:last-child)::after {
+                content: "";
+                height: 12px;
+                width: 150px;
+                background: #fff;
+                position: absolute;
+                left: 112px;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                border-radius: 50px;
+               
+            }
+        }
+    } 
+    /* Carousel end */   
 }

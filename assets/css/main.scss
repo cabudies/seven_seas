@@ -1,5 +1,8 @@
 @import 'common/constant';
+@import 'common/institutes';
 @import 'common/services';
+@import 'common/countries';
+@import 'common/about-common';
 
 // home 
 main {
@@ -159,6 +162,7 @@ main {
       h2 {
         font-family: $roboto-bold;
         font-size: 48px;
+        margin: 0;
       }
     }
 
@@ -201,6 +205,7 @@ main {
       font-family: $roboto-bold-italic;
       font-size: 32px;
       color: #002227;
+      margin: 0;
     }
 
     ul {
@@ -247,6 +252,7 @@ main {
       font-family: $roboto-medium;
       font-size: 36px;
       color: #fff;
+      margin: 0;
     }
   }
 

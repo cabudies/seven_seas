@@ -76,6 +76,11 @@
   color: #243665;
 }
 
+.common-peach-section .shadow {
+  -webkit-box-shadow: 0 4px 4px rgba(30, 30, 30, 0.3) !important;
+          box-shadow: 0 4px 4px rgba(30, 30, 30, 0.3) !important;
+}
+
 .red-bg {
   background-color: #F82626;
 }
@@ -140,8 +145,120 @@
   color: #E01167;
 }
 
+main.institutes .institute-bg {
+  background: url(./../../assets/images/page-institutes-hero.svg);
+  background-size: contain;
+  background-position: center center;
+}
+
+main.institutes .institutes-type-2-bg {
+  background: url(./../../assets/images/page-institutes-type-2-bg.svg);
+  background-size: contain;
+  background-position: center center;
+}
+
+main.institutes .industries-layout {
+  background: #91aabb;
+}
+
+main.institutes .industries-layout-2 {
+  background: #ABC5B2;
+}
+
+main.institutes .selected-countries .badge {
+  background: #005793;
+  color: #e5e5e5;
+}
+
+main.institutes .selected-countries .badge.badge-2 {
+  background: #003334;
+}
+
+main.institutes .selected-countries .badge.selected {
+  background: #00164F;
+}
+
+main.institutes .selected-countries .badge.selected a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+main.institutes .dropdown button {
+  font-size: 30px;
+  color: #243665;
+  font-weight: 300;
+}
+
+main.institutes .dropdown button.dropdown-toggle::after {
+  content: none;
+}
+
+main.institutes .dropdown button img {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+main.institutes .dropdown button.active + .dropdown-menu {
+  display: block;
+  width: 100%;
+  top: 94px;
+  border-radius: 20px 20px;
+  font-size: 24px;
+  padding: 0;
+}
+
+main.institutes .dropdown button.active + .dropdown-menu li {
+  border-radius: 20px;
+}
+
+main.institutes .dropdown button.active + .dropdown-menu li a {
+  border-radius: 20px;
+  padding-left: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #243665;
+  font-weight: 300;
+}
+
+main.institutes .dropdown button.active + .dropdown-menu li a:hover, main.institutes .dropdown button.active + .dropdown-menu li a:active, main.institutes .dropdown button.active + .dropdown-menu li a:focus {
+  border-radius: 20px;
+}
+
+main.institutes .dropdown button.active + .dropdown-menu li a:active {
+  background-color: #91aabb;
+  color: black;
+}
+
+main.institutes .dropdown button.active img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+main.institutes .university-list .badge {
+  width: 100%;
+  white-space: normal;
+  border-radius: 20px;
+}
+
+main.institutes .university-list .badge p {
+  color: #1f1f1f;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+@media (min-width: 576px) {
+  main.institutes .university-list .custom-sm-6 {
+    width: 49%;
+  }
+}
+
+main.international-apirants {
+  /* carousel started  */
+  /* Carousel end */
+}
+
 main.international-apirants .online-booking.online-booking-int-asp {
-  background: url("../images/study-bg.png");
+  background-image: url("../images/study-bg.png");
 }
 
 main.international-apirants .online-booking.online-booking-int-asp h2 {
@@ -158,7 +275,7 @@ main.international-apirants .online-booking.online-booking-int-asp .last-para > 
 }
 
 main.international-apirants .online-booking.online-booking-int-asp .tructed-text {
-  max-width: 35%;
+  max-width: 45%;
 }
 
 main.international-apirants .home-hero.int-service-bg, main.international-apirants .home-hero.int-recruiting-agent {
@@ -168,11 +285,11 @@ main.international-apirants .home-hero.int-service-bg, main.international-apiran
 }
 
 main.international-apirants .int-service-bg {
-  background: url(../images/page-2-bg.svg);
+  background-image: url(../images/page-2-bg.svg);
 }
 
 main.international-apirants .int-recruiting-agent {
-  background: url(../images/page-3-hero.svg);
+  background-image: url(../images/page-3-hero.svg);
 }
 
 main.international-apirants .int-recruiting-agent h2 + p {
@@ -257,23 +374,23 @@ main.international-apirants .study-section .text-study span {
 }
 
 main.international-apirants .study-section.extended {
-  background: #E9D7C3;
+  background: #e9d7c3;
 }
 
 main.international-apirants .study-section.extended .btn-style {
-  background: #4B0303;
+  background: #4b0303;
 }
 
 main.international-apirants .study-section.extended .text-study {
-  color: #A05400;
+  color: #a05400;
 }
 
 main.international-apirants .study-section.extended .btn-warning {
-  background: #9B691F;
+  background: #9b691f;
 }
 
 main.international-apirants .study-section.extended .btn-warning + p {
-  color: #9B691F;
+  color: #9b691f;
 }
 
 main.international-apirants .primary-btn {
@@ -298,13 +415,171 @@ main.international-apirants .student-facilities.exteded .fw-bolder {
 }
 
 main.international-apirants .student-facilities .text-grey {
-  color: #BEBEBE;
+  color: #bebebe;
 }
 
 main.international-apirants #staticBackdrop .modal-dialog {
   max-width: initial;
   height: 100%;
   min-height: initial;
+}
+
+main.international-apirants .carousel-dark .carousel-indicators {
+  margin-right: 0;
+  margin-left: 0;
+  height: 110px;
+  bottom: -32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.international-apirants .carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: relative;
+  margin-right: 140px;
+  margin-left: 140px;
+  opacity: 1;
+}
+
+main.international-apirants .carousel-dark .carousel-indicators [data-bs-target].active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  background: url(./../../assets/images/page-2-sec1-b.png);
+  left: -30px;
+  top: -30px;
+}
+
+main.international-apirants .carousel-dark .carousel-indicators [data-bs-target]:not(:last-child)::after {
+  content: "";
+  height: 12px;
+  width: 150px;
+  background: #fff;
+  position: absolute;
+  left: 112px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50px;
+}
+
+main.countries .countries-bg {
+  background: url(./../../assets/images/canada-bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main.countries .country-title {
+  font-size: 48px;
+  background: #001F5B;
+  padding: 2.39rem 0;
+}
+
+main.countries .country-bg-c {
+  background: #D3F4FF;
+}
+
+main.countries .country-bg-c h3 {
+  font-size: 3.75rem;
+}
+
+main.about-common h1 {
+  font-size: 2.25rem;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+main.about-common h1::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #000000;
+  width: 149px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 25px;
+}
+
+main.about-common .featured-news {
+  background: #FFD6E7;
+}
+
+main.about-common .featured-news .custom-card {
+  height: 423px;
+  background: #E8F1FF;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  max-width: 365px;
+}
+
+main.about-common .blog h1 {
+  color: #FF0069;
+  letter-spacing: normal;
+  background: -webkit-gradient(linear, left bottom, left top, from(#D4DFFB), to(#D4DFFB)), #FFFFFF;
+  background: linear-gradient(0deg, #D4DFFB, #D4DFFB), #FFFFFF;
+}
+
+main.about-common .blog h1::after {
+  content: none;
+}
+
+main.about-common .blog .blog-card {
+  height: 250px;
+  max-width: 340px;
+  border-radius: 20px;
+  background: #C4C4C4;
+  margin: 25px auto;
+}
+
+main.about-common .blog h3 {
+  font-size: 2.25rem;
+  border-radius: 10px;
+}
+
+main.about-common .blog.extended {
+  background: #D28A39;
+}
+
+main.about-common .management {
+  background: #A2B6EB;
+}
+
+main.about-common .management h2 {
+  border-radius: 10px;
+}
+
+main.about-common .management .person {
+  height: 248px;
+  width: 248px;
+  background: #C4C4C4;
+  margin: auto;
+}
+
+main.about-common .management h4 {
+  font-size: 2.25rem;
+}
+
+main.about-common .management .experts-voice h2 {
+  font-size: 3rem;
+}
+
+main.about-common .management .experts-voice p {
+  text-align: justify;
+}
+
+main.about-common .management .experts-voice p::first-letter {
+  padding-left: 3.3rem;
 }
 
 main .header .top-bar {
@@ -549,6 +824,7 @@ main .services .title {
 main .services .title h2 {
   font-family: roboto-bold;
   font-size: 48px;
+  margin: 0;
 }
 
 main .services .services-card {
@@ -601,6 +877,7 @@ main .connect-us h1 {
   font-family: roboto-bold-italic;
   font-size: 32px;
   color: #002227;
+  margin: 0;
 }
 
 main .connect-us ul li {
@@ -645,6 +922,7 @@ main .student-assist p {
   font-family: roboto-medium;
   font-size: 36px;
   color: #fff;
+  margin: 0;
 }
 
 main .career-choice {
@@ -925,6 +1203,9 @@ main .programs .common-btn {
   main .online-booking .booking-bg {
     background-size: 40%;
   }
+  main.international-apirants .home-hero.int-service-bg {
+    background-size: 90%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -939,16 +1220,14 @@ main .programs .common-btn {
     font-size: 22px;
   }
   .common-btn,
-  main .career-choice .common-btn {
+  main .career-choice .common-btn,
+  main .btn-size-32 {
     border-radius: 12px;
     font-size: 22px;
     padding: 8px 28px;
   }
   main .online-booking .booking-bg {
     height: 380px;
-  }
-  main .online-booking {
-    padding: 50px 0;
   }
   main .services .title h2,
   main .career-choice p,
@@ -966,7 +1245,9 @@ main .programs .common-btn {
   main .career-choice,
   main .international-exp,
   main .recruitment-agent,
-  main .partner {
+  main .partner,
+  main .online-booking,
+  main.international-apirants .career-programs {
     padding: 36px 0 55px;
   }
   main .connect-us h1,
@@ -991,6 +1272,239 @@ main .programs .common-btn {
     border-radius: 14px 0;
     font-size: 26px;
     padding: 8px 20px;
+  }
+  main .programs {
+    padding: 92px 96px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main .header .top-bar .top-bar-left .top-bar-whatsapp a,
+  main .header .top-bar .top-bar-right ul li a {
+    padding: 0 3px;
+  }
+  .top-bar-right {
+    text-align: right;
+  }
+  main .header .main-nav {
+    padding: 8px 0;
+  }
+  main .header .main-nav .navbar-brand img {
+    width: 70px;
+  }
+  main .header .main-nav .navbar-nav {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main .services,
+  main .consult-us,
+  main .connect-us,
+  main .student-assist,
+  main .career-choice,
+  main .international-exp,
+  main .recruitment-agent,
+  main .partner,
+  main .online-booking,
+  main.international-apirants .career-programs {
+    padding: 30px 0 36px;
+  }
+  main .online-booking .booking-bg ul li > span {
+    height: 35px;
+  }
+  main .online-booking .booking-bg ul li:first-child img,
+  main .online-booking .booking-bg ul li:nth-child(2) .img,
+  main .online-booking .booking-bg ul li:nth-child(3) .img {
+    width: 35px;
+    height: 35px;
+  }
+  main .online-booking .booking-bg ul li:nth-child(2) .img img,
+  main .online-booking .booking-bg ul li:nth-child(3) .img img {
+    width: 20px;
+  }
+  main .online-booking .booking-bg {
+    height: auto;
+  }
+  main .services .services-card .card img {
+    width: auto;
+    height: auto;
+  }
+  main .services .services-card {
+    display: block;
+  }
+  main .services .services-card .card {
+    margin: 35px 48px;
+    width: auto;
+  }
+  main .services .title {
+    margin: 0;
+  }
+  main .student-assist p,
+  main .partner p {
+    font-size: 20px;
+  }
+  .international-exp img {
+    margin-top: 30px;
+  }
+  main .partner h2,
+  main.international-apirants .online-booking.online-booking-int-asp h2,
+  main.international-apirants .fs-36 {
+    font-size: 24px;
+  }
+  main.international-apirants .fw-500,
+  main.international-apirants .online-booking.online-booking-int-asp .tructed-text,
+  main.international-apirants .career-programs .right-section,
+  main.international-apirants .primary-btn {
+    font-size: 24px !important;
+  }
+  main .footer .social-ico a {
+    margin-left: 7px;
+  }
+  main .footer {
+    padding: 20px 0 20px;
+  }
+  main.international-apirants .carousel-dark .carousel-indicators [data-bs-target] {
+    margin-right: 82px;
+    margin-left: 82px;
+  }
+  main.international-apirants .carousel-dark .carousel-indicators [data-bs-target]:not(:last-child)::after {
+    width: 82px;
+    left: 90px;
+  }
+  main.international-apirants .carousel-dark .carousel-indicators [data-bs-target].active::before {
+    top: -23px;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  main.international-apirants .study-section .btn-style,
+  main.international-apirants .fs-48 {
+    font-size: 28px;
+  }
+  main .programs {
+    padding: 50px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .home-hero.home-hero-bg,
+  main .online-booking .booking-bg,
+  main.international-apirants .home-hero.int-service-bg,
+  main.international-apirants .int-recruiting-agent {
+    background: none;
+  }
+  main .online-booking .booking-bg ul li > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .services .title h2,
+  .common-btn,
+  main .consult-us h4,
+  main .home-hero p,
+  main .online-booking .booking-bg ul li > span .text,
+  .common-btn,
+  main .career-choice .common-btn,
+  main .international-exp p,
+  main .international-exp ul li,
+  main.international-apirants .fs-48 {
+    font-size: 16px;
+  }
+  main .services .services-card .card {
+    margin: 35px 0;
+  }
+  main .consult-us .common-btn {
+    margin: 25px 0;
+  }
+  main .online-booking .booking-bg {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .connect-us h1,
+  main .connect-us ul li,
+  main .career-choice h4,
+  main .consult-us h4,
+  main .recruitment-agent p,
+  main .partner p,
+  main .career-choice p,
+  .label-ribben,
+  main .partner h2,
+  main.international-apirants .fs-36,
+  main .programs .card .title h3 {
+    font-size: 18px;
+  }
+  main .programs .card {
+    margin-bottom: 50px;
+  }
+  main .programs .card .title {
+    height: 100px;
+  }
+  main.international-apirants .fw-500,
+  main.international-apirants .online-booking.online-booking-int-asp .tructed-text {
+    font-size: 18px !important;
+    margin: 0;
+  }
+  main .consult-us .common-btn.orange-color {
+    margin: 10px 0;
+  }
+  .career-choice img,
+  .recruitment-agent img,
+  .international-exp img,
+  .connect-us img {
+    display: none;
+  }
+  main .recruitment-agent h3 {
+    font-size: 24px;
+  }
+  .partner .d-flex {
+    display: block !important;
+  }
+  main .footer .social-ico {
+    margin-top: 20px;
+  }
+  main .top-bar-right {
+    text-align: left;
+  }
+  main .header .top-bar .container > .d-flex {
+    display: block !important;
+  }
+  main .online-booking .booking-bg ul li:first-child .text {
+    line-height: 2;
+  }
+  main.international-apirants .carousel-dark .carousel-indicators [data-bs-target] {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  main.international-apirants .carousel-dark .carousel-indicators [data-bs-target]:not(:last-child)::after {
+    width: 50px;
+    left: 75px;
+  }
+  .student-facilities img {
+    display: none;
+  }
+  main.international-apirants .study-section .btn-style {
+    font-size: 24px !important;
+    margin-top: 20px !important;
+  }
+  .common-peach-section .title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main .online-booking .booking-bg ul li > span .text {
+    font-size: 12px;
+  }
+  main .online-booking .booking-bg ul li:first-child .text {
+    line-height: 3;
+  }
+  main.international-apirants .primary-btn {
+    font-size: 16px !important;
+  }
+  main .programs .card,
+  main .programs .card .title,
+  main .programs .card .img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
