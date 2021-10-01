@@ -57,6 +57,12 @@ main.international-apirants {
     .br-20 {
         border-radius: 20px;
     }
+    .br-10 {
+        border-radius: 10px;
+    }
+    .br-25 { 
+        border-radius: 25px;
+    }
     .btn-warning {
         background: #e3a311;
     }
@@ -180,4 +186,135 @@ main.international-apirants {
         }
     } 
     /* Carousel end */   
+    
+    &.learning-path {
+        .home-hero.learning-bg, .home-hero.discover-bg {
+            p {
+                font-family: $roboto-regular;
+                color: #243665;
+            }
+        }
+        .learning-bg {
+            background-image: url(./../../assets/images/page-7-discover.svg);
+            @extend %background-props;
+        }
+        .bg-c-discover {
+            background: #FFD6E7;
+        }
+        .btn-magenta {
+            background: #D959D2;
+        }
+        .btn-violate {
+            background: #7B55CC;
+        }
+        .btn-blue {
+            background: #4767BE;
+        }
+        .btn-skyblue {
+            background: #2982A0;
+        }
+        .text-blue {
+            color: #1F3C88;
+        }
+        .bg-dark-blue {
+            background: #1F3C88;
+        }
+        .custom-adjust {
+            img {
+                transform: scale(0.8) translateY(-6px);
+            }
+            &.extended img{
+                transform: scale(1) translateY(41px);
+            }            
+        }
+        .commitment {
+            .scale {
+                transform: scale(0.8);
+            }
+            .transform-translate {
+                transform: scale(1) translateY(41px);
+            }
+        }
+
+    }
+    &.discover-purposes {
+        .home-hero.discover-bg {
+            @extend %background-props;
+            background-image: url(./../../assets/images/page-6-discover-purpose-bg.svg);
+            background-position: right bottom 22px;
+            h3 { 
+                color: #243665;
+            }
+            button {
+                margin: auto 0 auto auto;
+            }
+        }
+        .btn-bg-blue {
+            background: #016BE0;
+        }
+        .btn-bg-brawn {
+            background: #DA4412;
+        }
+        .story-text {
+            border: 2px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .text-light-blue {
+            color: #03039c;
+        }
+        .bg-dark-violet {
+            background: #6A2277;
+        }
+        .br-10-0 {
+            border-radius: 10px 0;
+        }
+        blockquote {
+            background-image: url(./../../assets/images/left-bottom.svg), url(./../../assets/images/top-right.svg);
+            padding: 42px 42px 190px 30px;
+            background-size: 85%, 80%;
+            font-size: 16px;
+            background-position: left 0px top 74%, top 0px right 0px;
+            background-repeat: no-repeat;
+            text-align: justify;
+            position: relative;
+            p:first-child::first-letter {
+                padding-left: 10%;
+            }
+            &::before {
+                content: url(./../../assets/images/double-in-start.PNG);
+                position: absolute;
+                top: -27px;
+                left: -31px;
+            }
+            &::after {
+                content: url(./../../assets/images/double-in-end.PNG);
+                position: absolute;
+                bottom: 23%;
+                right: -41px;
+            }
+        }
+        .educational-services {
+            padding: 10px;
+            background: linear-gradient(
+                112deg, #B61256, #DC8EAE, #FFFFFF , #E5ABC3, #E5ABC3);
+            >div {
+                border-radius: 15px/18px;
+            }
+        }
+        .why-canada {
+            .transformed {
+                transform: translateY(-17px);
+            }
+        }
+        .bg-pinkish-magenta {
+            background: #C952DF;
+        }
+        .bg-light-sky-blue {
+            background: #E8F0FE;            
+        }
+        .h-40 {
+            height: calc(100% - 252px);
+            font-size: 20px;
+        }
+    }
 }
